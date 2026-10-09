@@ -1,8 +1,6 @@
 # Object Layout Tool
 
-Object Layout Tool is a Unity Editor tool for arranging selected GameObjects or a selected parent's children along a chosen world axis.
-
-It is useful for quickly packing objects together, distributing objects across an existing span, or laying out child objects using renderer bounds, collider bounds, or transform positions.
+Object Layout Tool arranges selected GameObjects or a parent's direct children along a chosen world axis. It simplifies repetitive positioning with packing and even distribution options that can account for object bounds.
 
 ![Object Layout Tool demo](Media/object-layout-tool-demo.gif)
 
@@ -77,7 +75,7 @@ Inactive GameObjects are excluded from measurement. If fewer than two active, me
 
 `Use Selected as Parent` assigns the single selected object to the `Parent` field and is enabled only when exactly one object is selected.
 
-## Limitations / Scope
+## Limitations
 
 - Collider Bounds uses 3D `Collider` components, not `Collider2D`.
 - `Renderer Bounds` ignores `ParticleSystemRenderer` components.
@@ -89,7 +87,23 @@ Inactive GameObjects are excluded from measurement. If fewer than two active, me
 
 ## Compatibility
 
-Tested with Unity 6000.3.15f1.
+Tested with Unity `6000.3.15f1`.
+
+## 7 Tools in 7 Days — Day 5
+
+This tool is part of the **7 Tools in 7 Days** series.
+
+[Read the Day 5 development story on Substack](https://ecesefercioglu.substack.com/p/7-tools-in-7-days-day-5-object-layout)
+
+| Day | Tool |
+| --- | --- |
+| Day 1 | [Parent From Bounds](https://github.com/seferciogluecce/parent-from-bounds) |
+| Day 2 | [Separate Mesh Bodies](https://github.com/seferciogluecce/separate-mesh-bodies) |
+| Day 3 | [Brick Wall Generator](https://github.com/seferciogluecce/brick-wall-generator) |
+| Day 4 | [Particle System Context Previewer](https://github.com/seferciogluecce/particle-system-context-previewer) |
+| **Day 5** | **[Object Layout Tool](https://github.com/seferciogluecce/object-layout-tool)** |
+| Day 6 | [DOTween Selection Animation Previewer](https://github.com/seferciogluecce/dotween-selection-animation-previewer) |
+| Day 7 | [Wave Object Distributor](https://github.com/seferciogluecce/wave-object-distributor) |
 
 ## License
 
